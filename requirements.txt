@@ -1,0 +1,21 @@
+# Core scientific stack
+pandas
+numpy
+pyarrow
+
+# Machine learning
+scikit-learn
+xgboost
+joblib
+
+# Progress bars
+tqdm
+
+# Command-line argument handling
+click
+
+# Optional but recommended (used by your preprocessing scripts)
+fastparquet
+
+# If reading/writing parquet in Windows needs snappy support
+python-snappy

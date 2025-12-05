@@ -1,0 +1,93 @@
+# ============================
+# PYTHON BUILD / CACHE
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ============================
+# VIRTUAL ENVIRONMENTS
+# ============================
+env/
+venv/
+.hdd_env/
+.hdd_prediction_env/
+
+# ============================
+# DATASETS
+# (THESE SHOULD NEVER BE COMMITTED)
+# ============================
+data/raw/
+data/processed/
+data/predictions/
+data/testdata/
+data/tmp/
+*.csv
+*.parquet
+
+# Allow small example files
+!data/examples/
+
+# ============================
+# MODEL ARTIFACTS
+# ============================
+artifacts/
+ml/artifacts/
+model/
+models/
+checkpoints/
+
+# Allow JSON schema files used by code
+!ml/artifacts/*.json
+
+# ============================
+# LOGS & TEMP FILES
+# ============================
+logs/
+*.log
+*.tmp
+*.temp
+
+# ============================
+# JUPYTER / NOTEBOOK FILES
+# ============================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================
+# EDITOR / OS FILES
+# ============================
+# VSCode
+.vscode/
+.code/
+# PyCharm
+.idea/
+# System
+.DS_Store
+Thumbs.db
+
+# ============================
+# ENV Files (Secrets)
+# ============================
+.env
+.env.*
+*.secret
+*.token
+
+# ============================
+# PROJECT SPECIFIC IGNORE RULES
+# ============================
+ml/training/__pycache__/
+ml/prediction/__pycache__/
+ml/data_processing/__pycache__/
+
+# Prevent accidental training cache commit
+training_cache/
+incremental_training_cache/
