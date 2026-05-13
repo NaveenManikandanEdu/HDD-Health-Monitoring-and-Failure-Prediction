@@ -1,0 +1,54 @@
+fastapi
+uvicorn[standard]
+psycopg2-binary
+sqlalchemy
+python-dotenv
+passlib[bcrypt]
+pydantic
+pydantic-settings
+pydantic[email]
+email-validator
+python-jose
+jinja2
+python-multipart
+pandas
+pyarrow
+numpy
+scikit-learn
+lightgbm
+joblib
+tqdm
+psutil
+sqlalchemy
+passlib[bcrypt]
+python-jose
+pydantic
+email-validator
+fpdf
+streamlit
+fastapi
+uvicorn
+streamlit
+pandas
+numpy
+joblib
+scikit-learn
+matplotlib
+seaborn
+fpdf
+python-multipart
+python-jose
+passlib[bcrypt]
+bcrypt==3.2.2
+email-validator
+requests
+
+
+
+#uvicorn web_app.backend.main:app --reload
+#python simulator/warehouse_simulator.py
+#streamlit run web_app/frontend/app.py
+
+#python -m controller.main
+#python simulator\feeder.py
+

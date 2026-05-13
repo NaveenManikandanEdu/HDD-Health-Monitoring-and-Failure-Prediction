@@ -1,0 +1,11 @@
+# Email Notification Settings
+smtp:
+  server: "smtp.gmail.com"
+  port: 587
+  sender: "your email"
+  password: "************"
+  receiver: "reciever email"
+
+alerts:
+  enabled: true
+  subject_prefix: "[HDD-AI-ALERT]"

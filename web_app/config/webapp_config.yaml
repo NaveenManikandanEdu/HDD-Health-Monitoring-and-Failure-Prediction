@@ -1,0 +1,30 @@
+api:
+  title: "HDD Failure Prediction Service"
+  version: "2.0.0"
+  port: 8000
+  host: "127.0.0.1"
+  debug_mode: true
+
+registry:
+  # The Web App must read the Controller's DB to know which .pkl is active
+  db_path: "controller/registry/controller.db"
+  model_storage_root: "controller/storage/models/active"
+
+models:
+  health:
+    type: "regression"
+    features: ["smart_5_raw", "smart_187_raw", "smart_188_raw"]
+  
+  risk_7d:
+    type: "classification"
+    failure_threshold: 0.75
+    features:
+      - "smart_5_raw"
+      - "smart_187_raw"
+      - "smart_188_raw"
+      - "smart_197_raw"
+      - "smart_198_raw"
+
+monitoring:
+  # This matches the WebAppMonitor in the controller
+  health_endpoint: "/health"

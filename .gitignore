@@ -1,0 +1,107 @@
+##################################################
+# PYTHON
+##################################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+##################################################
+# VIRTUAL ENVIRONMENTS
+##################################################
+.env
+.env.*
+.venv/
+venv/
+env/
+conda/
+*.conda
+
+##################################################
+# IDE / OS
+##################################################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+##################################################
+# JUPYTER
+##################################################
+.ipynb_checkpoints/
+
+##################################################
+# LOG FILES
+##################################################
+*.log
+logs/
+controller/logs/
+ml/logs/
+
+##################################################
+# DATABASE FILES (Runtime)
+##################################################
+*.db
+*.sqlite3
+controller/registry/*.db
+web_app/backend/app.db
+
+##################################################
+# RUNTIME STORAGE (Controller)
+##################################################
+controller/storage/csv/
+controller/storage/raw/
+controller/storage/reports/
+controller/storage/archive/
+controller/storage/processed_csv/
+
+##################################################
+# MODEL STORAGE
+##################################################
+controller/storage/models/
+controller/storage/checkpoints/
+
+##################################################
+# ML MODELS & CHECKPOINTS
+##################################################
+ml/models/
+ml/checkpoints/
+
+##################################################
+# DATA DIRECTORIES
+##################################################
+data/
+simulator/data/
+simulator/raw_snapshots/
+
+##################################################
+# GENERATED FILES
+##################################################
+*.parquet
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+##################################################
+# GENERATED REPORTS
+##################################################
+*.pdf
+*.png
+
+##################################################
+# TEST / CACHE
+##################################################
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+##################################################
+# KEEP IMPORTANT FILES
+##################################################
+!README.md
+!requirements.txt
+!LICENSE
+!ml/artifacts/feature_columns.json
+!web_app/config/webapp_config.yaml
